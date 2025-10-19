@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Works | CTRL+LOS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="ctrlogo.png" alt="Company Logo" /></a>
+    </div>
+    <nav>
+      <a href="works.html">works</a>
+      <a href="contact.html">contact</a>
+    </nav>
+  </header>
+
+  <main class="works-page">
+    <h1>My Works</h1>
+    <p>Here you can showcase your projects, videos, or artwork.</p>
+    <!-- Add your content here -->
+  </main>
+</body>
+</html>
