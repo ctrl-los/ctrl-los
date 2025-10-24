@@ -4,8 +4,113 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Works | CTRL+LOS</title>
+  <link rel="icon" type="image/png" href="LOGO.png" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: url('background-image.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    header .logo img {
+      height: 50px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 30px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    nav a.active {
+      text-decoration: underline;
+    }
+
+    /* WORKS SECTION */
+    .works-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 100px;
+      padding: 80px 5%;
+    }
+
+    .work-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 50px;
+      width: 100%;
+      max-width: 1300px;
+    }
+
+    .work-video {
+      flex: 1.4;
+      display: flex;
+      justify-content: center;
+    }
+
+    .work-video iframe {
+      width: 100%;
+      max-width: 800px;
+      aspect-ratio: 16 / 9;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+    }
+
+    .work-text-box {
+      flex: 1;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .work-text-box h3 {
+      margin-top: 0;
+      font-size: 26px;
+      color: #fff;
+    }
+
+    .work-text-box p {
+      font-size: 18px;
+      line-height: 1.5;
+      color: #ddd;
+    }
+
+    /* Responsive layout */
+    @media (max-width: 900px) {
+      .work-row {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .work-text-box {
+        width: 100%;
+      }
+
+      .work-video iframe {
+        max-width: 100%;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <!-- ===== HEADER ===== -->
   <header>
@@ -19,34 +124,57 @@
   </header>
 
   <!-- ===== MAIN CONTENT ===== -->
-  <main class="works-section">
-    <h1 class="works-title">Featured Works</h1>
-
-    <div class="video-grid">
-      <!-- Video 1 -->
-      <div class="work-item">
-        <div class="work-frame">
-          <iframe src="https://www.youtube.com/embed/WC0ApO_03Ms" allowfullscreen></iframe>
-        </div>
+  <section class="works-section">
+    
+    <!-- Video 1 -->
+    <div class="work-row">
+      <div class="work-text-box">
         <h3>Remember December</h3>
+        <p>A motion graphic that explores themes of self-expression and the passage of time. Remember December is a pivotal moment in my creative progression as it allowed me to experiment with motion design and essentially discover my animation style through this project.</p>
       </div>
-
-      <!-- Video 2 -->
-      <div class="work-item">
-        <div class="work-frame">
-          <iframe src="https://www.youtube.com/embed/uYU4YwvIV84?si=qcmWCi3bc9zXKIHJ" allowfullscreen></iframe>
-        </div>
-        <h3>hell/HEAVENSENT</h3>
-      </div>
-
-      <!-- Video 3 -->
-      <div class="work-item">
-        <div class="work-frame">
-          <iframe src="https://www.youtube.com/embed/6_LPVGenyS0?si=PwDqjSNZJC-iktwM" allowfullscreen></iframe>
-        </div>
-        <h3>Our Soil Their Land</h3>
+      <div class="work-video">
+        <iframe src="https://www.youtube.com/embed/WC0ApO_03Ms" allowfullscreen></iframe>
       </div>
     </div>
-  </main>
+
+    <!-- Video 2 -->
+    <div class="work-row">
+      <div class="work-text-box">
+        <h3>hell/HEAVENSENT</h3>
+        <p>Co-Directing this project with my creative partner, Josh made this project have unlimited potential. As our first music video, with no creative limitations we were able to purely express our potential through this video and we were able to collaborate with great artists from our music scene Birdcage and Woeful.</p>
+      </div>
+      <div class="work-video">
+        <iframe src="https://www.youtube.com/embed/e-P_B-6zyY4"  allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Video 3 -->
+    <div class="work-row">
+      <div class="work-text-box">
+        <h3>Our Soil Their Land</h3>
+        <p>A motion graphic that takes a more politcal approach over aesthetics, this project allowed me to represent my culture and strengthen my identity as a Filipino creative. Making this short infographic inspired me to keep representing my culture in creative contexts and to bring more awareness of the struggles our people face. </p>
+      </div>
+      <div class="work-video">
+        <iframe src="https://www.youtube.com/embed/6_LPVGenyS0?si=PwDqjSNZJC-iktwM" allowfullscreen></iframe>
+      </div>
+    </div>
+
+  </section>
 </body>
 </html>
+
+ <!-- Video 3 -->
+    <div class="work-row">
+      <div class="work-text-box">
+        <h3>Our Skatepark - 360 Experience </h3>
+        <p>Immersive 360 tour of my local skatepark, informing beginner skaters on how to use certain obstacles.</p>
+      </div>
+      <div class="work-video">
+<iframe allowfullscreen="yes" allowvr ="yes" allow="autoplay https://spaces.wondavr.com; microphone https://spaces.wondavr.com" frameborder="0" height="550px" scrolling="no" width="100%" src="https://wvr.li/0zgbp1"></iframe>
+      </div>
+    </div>
+
+  </section>
+</body>
+</html>
+
